@@ -1,0 +1,56 @@
+version: "3.6"
+services:
+  console:
+    image: craftcms/cli:8.0-dev
+    env_file: .env
+    environment:
+      XDEBUG_CONFIG: client_host=host.docker.internal
+    depends_on:
+      - mysql
+      - redis
+    volumes:
+      - .:/app
+    command: php craft queue/listen
+
+  web:
+    image: craftcms/nginx:8.0-dev
+    ports:
+      - 8080:8080
+    env_file: .env
+    environment:
+      XDEBUG_CONFIG: client_host=host.docker.internal
+    depends_on:
+      - mysql
+      - redis
+    volumes:
+      - .:/app
+    networks:
+            - craft-demo-network
+
+  mysql:
+    image: mysql:8.0
+    ports:
+      - 3306:3306
+    environment:
+       MYSQL_ROOT_PASSWORD: password
+       MYSQL_USER: craft
+       MYSQL_PASSWORD: password
+       MYSQL_DATABASE: craft_demo
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+            - craft-demo-network
+
+  redis:
+    image: redis:5-alpine
+    ports:
+      - 6379:6379
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+
+volumes:
+  db_data:
+
+
+networks:
+    craft-demo-network:

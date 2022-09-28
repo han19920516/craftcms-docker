@@ -1,0 +1,27 @@
+dateModified: 1664291520
+email:
+  fromEmail: wangweihan1992@gmail.com
+  fromName: craftcms
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    656c67c1-0296-4b2b-aac6-3bfecf8ad276: craftcms # craftcms
+    a19fe3bc-aede-487e-9739-a55645562759: Common # Common
+    fc128974-a05c-49cf-97d7-b81049482356: craftcms # craftcms
+plugins:
+  aws-s3:
+    edition: standard
+    enabled: true
+    schemaVersion: '2.0'
+system:
+  edition: solo
+  live: true
+  name: craftcms
+  schemaVersion: 4.0.0.9
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
