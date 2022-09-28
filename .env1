@@ -5,15 +5,15 @@ CRAFT_APP_ID=
 CRAFT_ENVIRONMENT=dev
 
 # The secure key Craft will use for hashing and encrypting data
-CRAFT_SECURITY_KEY=
+CRAFT_SECURITY_KEY=key
 
 # Database connection settings
 CRAFT_DB_DRIVER=mysql
-CRAFT_DB_SERVER=127.0.0.1
+CRAFT_DB_SERVER=mysql
 CRAFT_DB_PORT=3306
-CRAFT_DB_DATABASE=
-CRAFT_DB_USER=root
-CRAFT_DB_PASSWORD=
+CRAFT_DB_DATABASE=craft_demo
+CRAFT_DB_USER=craft
+CRAFT_DB_PASSWORD=password
 CRAFT_DB_SCHEMA=public
 CRAFT_DB_TABLE_PREFIX=
 
