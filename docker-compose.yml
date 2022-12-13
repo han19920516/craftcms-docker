@@ -1,15 +1,19 @@
 version: "3.6"
 services:
   web:
+  # 是用craftcms官方的nginx 和 cms镜像
     image: craftcms/nginx:8.0-dev
+    #映射本地端口8080
     ports:
       - 8080:8080
     env_file: .env
     environment:
       XDEBUG_CONFIG: client_host=host.docker.internal
+    #mysql和redis跑起来后才会跑craftcms 
     depends_on:
       - mysql
       - redis
+    #映射docker内容到本地，本地和docker文件会互相更新。
     volumes:
       - .:/app
     networks:
@@ -24,6 +28,7 @@ services:
        MYSQL_USER: craft
        MYSQL_PASSWORD: password
        MYSQL_DATABASE: craft_demo
+    #映射和保存数据库内容到本地，docker会自动挂载和管理
     volumes:
       - db_data:/var/lib/mysql
     networks:

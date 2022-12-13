@@ -1,0 +1,13 @@
+isPublic: true
+name: 'Public Schema'
+scope:
+  - 'sites.fc128974-a05c-49cf-97d7-b81049482356:read' # craftcms
+  - 'elements.drafts:read'
+  - 'elements.revisions:read'
+  - 'elements.inactive:read'
+  - 'volumes.fb716acc-937f-4b8f-860b-bb3787452511:read' # s3demo
+  - 'usergroups.everyone:read'
+  - 'volumes.fb716acc-937f-4b8f-860b-bb3787452511:edit' # s3demo
+  - 'volumes.fb716acc-937f-4b8f-860b-bb3787452511:create' # s3demo
+  - 'volumes.fb716acc-937f-4b8f-860b-bb3787452511:save' # s3demo
+  - 'volumes.fb716acc-937f-4b8f-860b-bb3787452511:delete' # s3demo

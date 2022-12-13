@@ -1,0 +1,24 @@
+defaultPlacement: end
+enableVersioning: true
+handle: about
+name: about
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  fc128974-a05c-49cf-97d7-b81049482356: # craftcms
+    enabledByDefault: true
+    hasUrls: true
+    template: _singles/about
+    uriFormat: about
+type: single

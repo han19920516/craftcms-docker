@@ -1,20 +1,67 @@
-dateModified: 1664291520
+dateModified: 1670937746
 email:
   fromEmail: wangweihan1992@gmail.com
   fromName: craftcms
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  blog:
+    hasUrls: true
+    name: blog
+    settings:
+      path: '@webroot/assets/blog'
+    type: craft\fs\Local
+    url: '@web/assets/blog'
+  general:
+    hasUrls: true
+    name: general
+    settings:
+      path: '@webroot/assets/general'
+    type: craft\fs\Local
+    url: '@web/assets/general'
 meta:
   __names__:
+    3b16f747-d6b9-459b-afae-efa3ed18364d: postcategory # postcategory
+    5b776fd1-5200-4e78-a78e-f99d32423ff9: 'Public Schema' # Public Schema
+    6a3d5bcb-f58a-418a-8a57-874e50813329: 'site description' # site description
+    6be6f488-366a-4ff5-88ab-89949c86d5de: Image # Image
+    6fb75db8-af23-444b-8b36-fe24651c427b: general # general
+    29dc2492-a917-415b-a597-c54cf3af6a01: 'bolg category' # bolg category
+    52e40c21-0118-4c20-ad1e-427a326d3250: about # about
+    78d8e0dc-d36a-4b22-a709-c70d219f1fb5: text # text
+    86f844ec-4670-4430-95ad-c346aef4a8c9: 'blog post fields' # blog post fields
+    212e00b1-1c4b-4ea3-b9b3-9f739eee98fe: text # text
+    399e1119-51ea-424e-8d3f-49603879937d: Image # Image
     656c67c1-0296-4b2b-aac6-3bfecf8ad276: craftcms # craftcms
+    97085fe4-59ef-4cc1-a2fd-9ef9b603cf0e: 'single fileds' # single fileds
+    6557880d-2193-48cd-bed8-1c4e3693284c: 'global fileds' # global fileds
     a19fe3bc-aede-487e-9739-a55645562759: Common # Common
+    a2805dc7-8911-42e7-8cf8-e110266096ae: blog # blog
+    ae6c1675-b54e-4c6a-b10f-0c1fe62e66b5: blog # blog
+    c77bb5ca-d1c9-437f-9661-3a63cbdd8e29: 'Site Information' # Site Information
+    ca49edda-29e1-4ca3-af08-51a173720d93: 'about image' # about image
+    ceedbeea-3ded-4a15-a2f6-8ad473b1e530: blog # blog
+    d891bfa8-e923-47cd-974f-85f4974439c3: about # about
+    d2678449-232d-4515-bd96-e387595c68e7: featureimage # featureimage
+    f4e04a1a-8e97-407a-a137-3d9a63e828d2: 'Post Content' # Post Content
+    fb716acc-937f-4b8f-860b-bb3787452511: s3demo # s3demo
     fc128974-a05c-49cf-97d7-b81049482356: craftcms # craftcms
+    fdb98aeb-b95c-428e-b53b-9cd3977e8b8a: summary # summary
 plugins:
   aws-s3:
     edition: standard
     enabled: true
     schemaVersion: '2.0'
+  navigation:
+    edition: standard
+    enabled: true
+    licenseKey: DK5JRDCERXUBVBT19S79E5S9
+    schemaVersion: 2.0.7
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
 system:
-  edition: solo
+  edition: pro
   live: true
   name: craftcms
   schemaVersion: 4.0.0.9

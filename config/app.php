@@ -23,6 +23,8 @@ return [
     'id' => App::env('CRAFT_APP_ID') ?: 'CraftCMS',
     'modules' => [
         'my-module' => \modules\Module::class,
+     // Global settings
+    
     ],
     //'bootstrap' => ['my-module'],
 ];

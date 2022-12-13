@@ -1,0 +1,54 @@
+field: f4e04a1a-8e97-407a-a137-3d9a63e828d2 # Post Content
+fieldLayouts:
+  553cea7c-9164-45ac-8933-e7e79c494047:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 78d8e0dc-d36a-4b22-a709-c70d219f1fb5 # text
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d0d59283-112e-4ac8-a2c9-7d69df588364
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 2a04d54c-6fa0-4fa9-a05a-b39a6644c174
+        userCondition: null
+fields:
+  78d8e0dc-d36a-4b22-a709-c70d219f1fb5: # text
+    columnSuffix: gtxmphvf
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: null
+    name: text
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: text
+name: text
+sortOrder: 1

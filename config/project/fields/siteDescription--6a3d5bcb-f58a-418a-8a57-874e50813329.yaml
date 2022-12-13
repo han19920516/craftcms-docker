@@ -1,0 +1,19 @@
+columnSuffix: qmrsfrmy
+contentColumnType: text
+fieldGroup: 6557880d-2193-48cd-bed8-1c4e3693284c # global fileds
+handle: siteDescription
+instructions: 'site description'
+name: 'site description'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

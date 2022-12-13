@@ -1,0 +1,19 @@
+columnSuffix: zqcxrnqi
+contentColumnType: text
+fieldGroup: 86f844ec-4670-4430-95ad-c346aef4a8c9 # blog post fields
+handle: summary
+instructions: 'hello from craftcms'
+name: summary
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 1
+  multiline: true
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
